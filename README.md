@@ -1,0 +1,2 @@
+# PraktikosUzduotis
+Pirmosios užduoties sprendimas.
