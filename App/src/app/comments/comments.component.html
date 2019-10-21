@@ -1,0 +1,9 @@
+<div class="h1">record title</div>
+<div class="h1">record text</div>
+<ul class='comments'>
+    <li *ngFor='let comment of comments'>
+        <span class='span'>{{comment.text}}</span>
+        <span class='span'>{{comment.email}}</span>
+        <span class='span'>{{comment.time}}</span>
+    </li>
+</ul>
