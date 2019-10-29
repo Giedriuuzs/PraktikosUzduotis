@@ -1,0 +1,16 @@
+<mat-dialog-content>
+    <h1>{{data.recordTitle}}</h1>
+    <p>{{data.recordText}}</p>
+    <p>Comments:</p>
+    <ul class='comments' *ngFor='let comment of comments'>
+        <li>
+            <span class='span'>{{comment.email}}</span>
+            <span class='span'>{{comment.time}}</span>
+            <p class='span'>{{comment.text}}</p>
+        </li>
+    </ul>
+    <h2>Add a comment:</h2>
+    <input [(ngModel)]="comment.email" class="input" type="email" name="email" placeholder="Email Address" />
+    <textarea [(ngModel)]="comment.text" class="textarea" name="text" placeholder="Type your Message"></textarea>
+    <input (click)="onClick()" class="input" type="submit" value="POST COMMENT" />
+</mat-dialog-content>

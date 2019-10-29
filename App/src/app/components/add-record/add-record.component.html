@@ -1,0 +1,8 @@
+<div class="form-style-6">
+    <form #recordForm="ngForm">
+        <input [(ngModel)]="record.title" required name="title" type="text" placeholder="Title" #name="ngModel">
+        <input [(ngModel)]="record.email" required name="email" type="email" placeholder="Email Address" />
+        <textarea [(ngModel)]="record.text" required name="text" placeholder="Type your Message"></textarea>
+        <input (click)="onClick()" class="input" type="button" value="POST RECORD" />
+    </form>
+</div>

@@ -1,0 +1,27 @@
+.div {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+.div:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+.div.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+.div.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+ .span {
+    position: relative;
+    margin-right: .8em;
+  }
